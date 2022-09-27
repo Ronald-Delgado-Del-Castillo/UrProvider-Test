@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  searchTerm = '';
+  profile = 'store';
   id = 1;
   title = 'urprovider-webapp';
   options = [
@@ -13,6 +15,13 @@ export class AppComponent {
     { path: '', title: 'Plans'},
     { path: '', title: 'Notifications'},
     { path: `/supplier-inventory/${this.id}`, title: 'Inventory'},
+    { path: '', title: 'Profile'}
+  ]
+
+  options2 = [
+    { path: ``, title: 'Home'},
+    { path: '', title: 'Orders'},
+    { path: '', title: 'Notifications'},
     { path: '', title: 'Profile'}
   ]
 }
